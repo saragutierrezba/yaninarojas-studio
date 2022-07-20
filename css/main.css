@@ -14,6 +14,10 @@ background-color: whitesmoke;
 
 /*Estilos de Home*/
 
+header h1:hover{
+    color: red;
+    font-weight: bold;
+}
 .titulo__principal--pink {
     color: white;
     background-color: pink;
