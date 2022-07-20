@@ -1,0 +1,510 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body {
+background-color: whitesmoke;
+}
+
+/*Estilos de Home*/
+
+.titulo__principal--pink {
+    color: white;
+    background-color: pink;
+    padding: 3px;
+    margin: 15px;
+    text-align: center;
+    border: 3px double;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.nombre__artista {
+    font-size: 4rem;
+    font: bold;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 100%; 
+}
+
+.logo{
+    width: 12%;
+    margin-top: 1px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+
+.home__principal--blanco{
+    color: pink;
+    background-color: white;
+    padding: 2px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 22px;
+    border: 5px pink double;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+/* Estilos del menu */
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: whitesmoke; 
+    border-radius: 1rem;
+    box-shadow: 1px 1px palevioletred;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.menu ul li{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 100%;
+}
+
+.final__home--negro{
+    color: black;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 100%;
+}
+
+.derechos__reservados--negro{
+    color: black;
+    text-align: right;
+    font-family: 'Trispace', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+/*Estilos de Productos*/
+
+.productos__titulo{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 15px;
+    border: 2px palevioletred;
+    color: palevioletred;
+}
+
+.productos__menu{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-left: 5px;
+    background-color: pink;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px;
+    border: double white;
+    color: black;
+}
+
+/*Estilos de Acuarela tips*/
+
+.acuarela__titulo{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 15px;
+    border: 2px palevioletred;
+    color: palevioletred;
+}
+
+.video__acuarela{
+    margin-left: 15px;
+}
+
+.texto__acuarela{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: pink;
+    padding: 10px;
+    border: 5px;
+    border-radius: 15px;
+}
+
+/*Estilos de Sobre mí*/
+
+.sobremi__titulo{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 12rem;
+    margin-bottom: 1rem;
+    border: 2px palevioletred;
+    color: palevioletred;
+}
+
+.sobreMi{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sobremi__titulo sobremi__titulo"
+                         "imagen__yani imagen__yani"
+                         "texto__sobremi1 texto__sobremi1"
+                         "subtitulos__sobremi1 subtitulos__sobremi1"
+                         "texto__sobremi2 texto__sobremi2"
+                         "subtitulos__sobremi2 subtitulos__sobremi2"
+                         "texto__sobremi3 texto__sobremi3"
+                         "subtitulos__sobremi3 subtitulos__sobremi3"
+                         "texto__sobremi4 texto__sobremi4" 
+                         "instagram__yani instagram__yani";
+}
+
+.sobremi__titulos{
+    grid-area: sobremi__titulo
+}
+
+.imagen__yani{
+    grid-area: imagen__yani;
+}
+
+.texto__sobremi1{
+    grid-area: texto__sobremi1;
+
+}
+
+.subtitulos__sobremi1{
+    grid-area: subtitulos__sobremi1;
+}
+
+.texto__sobremi2{
+    grid-area: texto__sobremi2;
+}
+
+.subtitulos__sobremi2{
+    grid-area: subtitulos__sobremi2;
+}
+
+.texto__sobremi3{
+    grid-area: texto__sobremi3;
+}
+
+.subtitulos__sobremi3{
+    grid-area: subtitulos__sobremi3;
+}
+
+.texto__sobremi4{
+    grid-area: texto__sobremi4;
+}
+
+.instagram__yani{
+    grid-area: instagram__yani;
+}
+
+
+
+.imagen__yani{
+    width: 300px;
+    margin-left: 6.5rem;
+}
+
+.subtitulos__sobremi1{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    border: 2px palevioletred;
+    color: palevioletred;
+}
+
+.subtitulos__sobremi2{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    border: 2px palevioletred;
+    color: palevioletred;
+}
+
+.subtitulos__sobremi3{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    border: 2px palevioletred;
+    color: palevioletred;
+}
+
+
+.texto__sobremi1{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: pink;
+    padding: 10px;
+    border: 5px;
+    border-radius: 15px;
+}
+
+.texto__sobremi2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: pink;
+    padding: 10px;
+    border: 5px;
+    border-radius: 15px;
+}
+
+.texto__sobremi3{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: pink;
+    padding: 10px;
+    border: 5px;
+    border-radius: 15px;
+}
+
+.texto__sobremi4{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: pink;
+    padding: 10px;
+    border: 5px;
+    border-radius: 15px;
+}
+
+.instagram__yani{
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+/*Estilos de footer*/
+
+.derechos__reservados--negro{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/*Estilos de Contacto*/
+
+.formulario__titulo{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 15px;
+    border: 2px palevioletred;
+    color: palevioletred;
+}  
+
+.formulario__contacto{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 15px;
+    background-color: pink;
+    padding: 10px;
+    border: 5px;
+    border-radius: 15px;
+}
+
+/*media queries*/
+
+@media screen and (min-width:600px){
+    .sobremi__titulo{
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: left;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        border: 2px palevioletred;
+        color: palevioletred;
+    }
+
+    .imagen__yani{
+        width: 300px;
+        margin-left: 1rem;
+    }
+    .sobreMi{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto;
+        grid-template-areas: "sobremi__titulo sobremi__titulo"
+                             "imagen__yani texto__sobremi1"
+                             "subtitulos__sobremi1 subtitulos__sobremi1"
+                             "texto__sobremi2 texto__sobremi2"
+                             "subtitulos__sobremi2 subtitulos__sobremi2"
+                             "texto__sobremi3 texto__sobremi3"
+                             "subtitulos__sobremi3 subtitulos__sobremi3"
+                             "texto__sobremi4 texto__sobremi4" 
+                             "instagram__yani instagram__yani";
+    }
+    
+    .sobremi__titulos{
+        grid-area: sobremi__titulo
+    }
+    
+    .imagen__yani{
+        grid-area: imagen__yani;
+    }
+    
+    .texto__sobremi1{
+        grid-area: texto__sobremi1;
+    
+    }
+    
+    .subtitulos__sobremi1{
+        grid-area: subtitulos__sobremi1;
+    }
+    
+    .texto__sobremi2{
+        grid-area: texto__sobremi2;
+    }
+    
+    .subtitulos__sobremi2{
+        grid-area: subtitulos__sobremi2;
+    }
+    
+    .texto__sobremi3{
+        grid-area: texto__sobremi3;
+    }
+    
+    .subtitulos__sobremi3{
+        grid-area: subtitulos__sobremi3;
+    }
+    
+    .texto__sobremi4{
+        grid-area: texto__sobremi4;
+    }
+    
+    .instagram__yani{
+        grid-area: instagram__yani;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .sobremi__titulo{
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: left;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        border: 2px palevioletred;
+        color: palevioletred;
+    }
+
+    .imagen__yani{
+        width: 300px;
+        margin-left: 1rem;
+    }
+    .sobreMi{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto;
+        grid-template-areas: "sobremi__titulo sobremi__titulo"
+                             "imagen__yani texto__sobremi1"
+                             "imagen__yani subtitulos__sobremi1"
+                             "imagen__yani texto__sobremi2"
+                             "subtitulos__sobremi2 subtitulos__sobremi2"
+                             "texto__sobremi3 texto__sobremi3"
+                             "subtitulos__sobremi3 subtitulos__sobremi3"
+                             "texto__sobremi4 texto__sobremi4" 
+                             "instagram__yani instagram__yani";
+    }
+    
+    .sobremi__titulos{
+        grid-area: sobremi__titulo
+    }
+    
+    .imagen__yani{
+        grid-area: imagen__yani;
+    }
+    
+    .texto__sobremi1{
+        grid-area: texto__sobremi1;
+    
+    }
+    
+    .subtitulos__sobremi1{
+        grid-area: subtitulos__sobremi1;
+    }
+    
+    .texto__sobremi2{
+        grid-area: texto__sobremi2;
+        margin-top: 0.2rem;
+    }
+    
+    .subtitulos__sobremi2{
+        grid-area: subtitulos__sobremi2;
+    }
+    
+    .texto__sobremi3{
+        grid-area: texto__sobremi3;
+    }
+    
+    .subtitulos__sobremi3{
+        grid-area: subtitulos__sobremi3;
+    }
+    
+    .texto__sobremi4{
+        grid-area: texto__sobremi4;
+    }
+    
+    .instagram__yani{
+        grid-area: instagram__yani;
+    }
+}
