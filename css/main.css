@@ -9,28 +9,31 @@
 /* estilos generales */
 
 body {
-background-color: whitesmoke;
+background-color: pink;
 }
 
 /*Estilos de Home*/
 
 header h1:hover{
-    color: red;
+    color: palevioletred;
     font-weight: bold;
 }
 .titulo__principal--pink {
     color: white;
     background-color: pink;
-    padding: 3px;
-    margin: 15px;
     text-align: center;
     border: 3px double;
     border-radius: 50px;
-    display: grid;
-    grid-template-columns: 100%;
 }
 
+/*estilos del menu */
+
+.fondo-nav{
+    margin-top: 2rem;
+    background-color: white;
+}
 .nombre__artista {
+    color: white;
     font-size: 4rem;
     font: bold;
     font-family: 'Dancing Script', cursive;
@@ -40,10 +43,8 @@ header h1:hover{
 }
 
 .logo{
-    width: 12%;
-    margin-top: 1px;
-    margin-left: 45%;
-    margin-right: 45%;
+    width: 20%%;
+    text-align: left;
 }
 
 
@@ -110,6 +111,30 @@ nav ul li{
     font-weight: bolder;
     display: grid;
     grid-template-columns: 100%;
+}
+
+/*Estilos de Cuerpo Index*/
+
+.cuerpoIndex{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: 1fr;
+    grid-template-areas:"conoceProductos conoceProductos"
+                        "parrafo1 parrafo2";
+    grid-area: conoceProductos;
+}
+
+.conoceProductos{
+    grid-area: conoceProductos;
+}
+
+.parrafo1{
+    grid-area: parrafo1;
+}
+
+.parrafo2{
+    grid-area: parrafo2;
 }
 
 /*Estilos de Productos*/
@@ -194,7 +219,7 @@ nav ul li{
                          "instagram__yani instagram__yani";
 }
 
-.sobremi__titulos{
+.sobremi__titulo{
     grid-area: sobremi__titulo
 }
 
@@ -332,13 +357,6 @@ nav ul li{
     margin-left: 1rem;
     margin-top: 2rem;
 }
-/*Estilos de footer*/
-
-.derechos__reservados--negro{
-    margin-top: 2rem;
-    text-align: center;
-}
-
 /*Estilos de Contacto*/
 
 .formulario__titulo{
@@ -360,6 +378,14 @@ nav ul li{
     padding: 10px;
     border: 5px;
     border-radius: 15px;
+}
+
+/*Estilos footer*/
+
+.footer{
+    text-align: right;
+    margin: 1rem;
+
 }
 
 /*media queries*/
