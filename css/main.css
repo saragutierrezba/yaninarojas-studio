@@ -512,3 +512,9 @@ nav ul li{
         grid-area: instagram__yani;
     }
 }
+
+/* Estilos productos */
+
+.productoAcuarela{
+    width: 50%;
+}
