@@ -13,7 +13,7 @@ background-color: pink;
 }
 
 .container-fluid{
-    background-image: linear-gradient(to left, rgb(241, 135, 170), rgb(236, 197, 203));
+    background-image: linear-gradient(to right, rgb(252, 165, 179), rgb(236, 197, 203));
 }
 
 /*Estilos de Home*/
@@ -47,7 +47,6 @@ header h1:hover{
     width: 20%;
     text-align: left;
 }
-
 
 
 .home__principal--blanco{
