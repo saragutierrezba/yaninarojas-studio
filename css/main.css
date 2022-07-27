@@ -12,6 +12,10 @@ body {
 background-color: pink;
 }
 
+.container-fluid{
+    background-image: linear-gradient(to left, rgb(241, 135, 170), rgb(236, 197, 203));
+}
+
 /*Estilos de Home*/
 
 header h1:hover{
@@ -19,11 +23,8 @@ header h1:hover{
     font-weight: bold;
 }
 .titulo__principal--pink {
-    color: white;
     background-color: pink;
     text-align: center;
-    border: 3px double;
-    border-radius: 50px;
 }
 
 /*estilos del menu */
@@ -48,6 +49,7 @@ header h1:hover{
 }
 
 
+
 .home__principal--blanco{
     color: pink;
     background-color: white;
@@ -57,7 +59,6 @@ header h1:hover{
     font-weight: bolder;
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 22px;
-    border: 5px pink double;
     display: grid;
     grid-template-columns: 100%;
 }
@@ -117,27 +118,21 @@ nav ul li{
 
 .cuerpoIndex{
     margin: 2rem;
-    display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: 1fr;
-    grid-template-areas:"conoceProductos conoceProductos"
-                        "parrafo1 parrafo2";
-    grid-area: conoceProductos;
+    padding: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.conoceProductos{
-    grid-area: conoceProductos;
-}
-
-.parrafo1{
-    grid-area: parrafo1;
-}
-
-.parrafo2{
-    grid-area: parrafo2;
+main h3:hover{
+    color: white;
+    font-weight: bold;
 }
 
 /*Estilos de Productos*/
+
+main h3:hover{
+    color: white;
+    font-weight: bold;
+}
 
 .productos__titulo{
     font-weight: bolder;
@@ -145,6 +140,7 @@ nav ul li{
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
     margin-left: 15px;
+    margin-top: 1rem;
     border: 2px palevioletred;
     color: palevioletred;
 }
@@ -164,12 +160,18 @@ nav ul li{
 
 /*Estilos de Acuarela tips*/
 
+main h2:hover{
+    color: white;
+    font-weight: bold;
+}
+
 .acuarela__titulo{
     font-weight: bolder;
     font-size: 30px;
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
     margin-left: 15px;
+    margin-top: 1rem;
     border: 2px palevioletred;
     color: palevioletred;
 }
@@ -197,8 +199,8 @@ nav ul li{
     font-size: 30px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 12rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     border: 2px palevioletred;
     color: palevioletred;
 }
@@ -361,20 +363,24 @@ nav ul li{
 
 .formulario__titulo{
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
     margin-left: 15px;
-    border: 2px palevioletred;
     color: palevioletred;
 }  
+
+main form fieldset legend:hover{
+    color: black;
+    font-weight: bold;
+}
 
 .formulario__contacto{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     margin: 15px;
-    background-color: pink;
+    background-color: rgb(243, 231, 233);
     padding: 10px;
     border: 5px;
     border-radius: 15px;
@@ -388,7 +394,36 @@ nav ul li{
 
 }
 
-/*media queries*/
+/*media queries Index*/
+
+@media screen and (min-width: 600px){
+    .cuerpoIndex{
+        margin: 2rem;
+        padding: 1rem;
+        font-family: 'Josefin Sans', sans-serif;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: 1fr;
+        grid-template-areas:"conoceProductos conoceProductos"
+                            "parrafo1 parrafo2";
+        grid-area: conoceProductos;
+    }
+    
+    .conoceProductos{
+        grid-area: conoceProductos;
+    }
+    
+    .parrafo1{
+        grid-area: parrafo1;
+    }
+    
+    .parrafo2{
+        grid-area: parrafo2;
+    }
+}
+
+
+/*media queries Sobre mi*/
 
 @media screen and (min-width:600px){
     .sobremi__titulo{
