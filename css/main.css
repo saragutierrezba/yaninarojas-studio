@@ -44,8 +44,9 @@ header h1:hover{
 }
 
 .logo{
-    width: 20%;
+    width: 33%;
     text-align: left;
+    margin-top: 1rem
 }
 
 
@@ -116,9 +117,13 @@ nav ul li{
 /*Estilos de Cuerpo Index*/
 
 .cuerpoIndex{
-    margin: 2rem;
+    margin: 0.5rem;
     padding: 1rem;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.conoceProductos{
+    margin-left:0.2rem
 }
 
 main h3:hover{
@@ -395,9 +400,17 @@ main form fieldset legend:hover{
 
 /*media queries Index*/
 
+/*tamaño tablet*/
+
 @media screen and (min-width: 600px){
+
+    .logo{
+        width: 25%;
+        text-align: left;
+    }
+
     .cuerpoIndex{
-        margin: 2rem;
+        margin: 0.5rem;
         padding: 1rem;
         font-family: 'Josefin Sans', sans-serif;
         display: grid;
@@ -497,8 +510,14 @@ main form fieldset legend:hover{
     }
 }
 
+/*Media queries tamaño computadora*/
 
 @media screen and (min-width:1024px) {
+
+    .logo{
+        width: 10%;
+        text-align: left;
+    }
 
     .sobremi__titulo{
         font-weight: bolder;
